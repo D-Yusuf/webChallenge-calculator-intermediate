@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Calculator app</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/bootstrap-grid.css">
+  <link rel="stylesheet" href="./css/mobile.css">
+</head>
+<body>
+  
+  <div class="container-md d-flex flex-column align-items-center justify-content-center mb-4">
+
+  
+  <!-- TOP GRID -->
+  <div class="container-xs d-flex align-items-center justify-content-center">
+    <div class="row">
+        <!-- Title&Theme -->
+        <div class="col d-flex  justify-content-start">
+          <h6>calc</h6>
+        </div>
+        <div class="theme col align-self-end justify-content-end mb-1">
+          <p>THEME</p>
+          <span class="d-flex flex-column ">
+            <label for="theme" class="ms-1">123</label>
+            <input type="range" name="theme" id="theme" min="1" max="3" value="1">
+          </span>
+        </div>
+        <!-- SOLUTION TEXT -->
+        
+      
+      </div>
+      <!--// TOP GRID //-->
+    </div>
+    <!-- KEYS SECTION-->
+      <!-- Solution -->
+      <form class="mt-3 d-flex flex-column">
+      <div class="col-12 solution">
+          <input class="p-3" type="text" name="solutionTxt" readonly value="">
+        </div>
+        <!-- First Row -->
+        <div class="keys-container d-flex align-self-center mt-2">
+          
+          
+          <div class="row gx-2 gy-3 p-3">
+            <div class="col-3">
+              <input class="normal-keys" type="button" value="7" onclick="solutionTxt.value += '7'; console.log(solutionTxt.value)">
+            </div>
+            <div class="col-3">
+          <input class="normal-keys" type="button" value="8" onclick="solutionTxt.value += '8'">
+        </div>
+        <div class="col-3">
+          <input class="normal-keys" type="button" value="9" onclick="solutionTxt.value += '9'">
+        </div>
+        <div class="col-3">
+          <input class="del-key" type="button" value="del" onclick="solutionTxt.value = solutionTxt.value.toString().slice(0,-1)">
+        </div>
+        <!-- Second Row -->
+        <div class="col-3">
+          <input class="normal-keys" type="button" value="4" onclick="solutionTxt.value += '4'">
+        </div>
+        <div class="col-3">
+          <input class="normal-keys" type="button" value="5" onclick="solutionTxt.value += '5'">
+        </div>
+        <div class="col-3">
+          <input class="normal-keys" type="button" value="6" onclick="solutionTxt.value += '6'">
+        </div>
+        <div class="col-3">
+          <input class="normal-keys" type="button" value="+" onclick="solutionTxt.value += '+'">
+        </div>
+        <!-- Third Row -->
+        <div class="col-3">
+          <input class="normal-keys" type="button" value="1" onclick="solutionTxt.value += '1'">
+        </div>
+        <div class="col-3">
+          <input class="normal-keys" type="button" value="2" onclick="solutionTxt.value += '2'">
+        </div>
+        <div class="col-3">
+          <input class="normal-keys" type="button" value="3" onclick="solutionTxt.value += '3'">
+        </div>
+        <div class="col-3">
+          <input class="normal-keys" type="button" value="-" onclick="solutionTxt.value += '-'">
+        </div>
+        <!-- Fourth Row -->
+        <div class="col-3">
+          <input class="normal-keys" type="button" value="." onclick="solutionTxt.value += '.'">
+        </div>
+        <div class="col-3">
+          <input class="normal-keys" type="button" value="0" onclick="solutionTxt.value += '0'">
+        </div>
+        <div class="col-3">
+          <input class="normal-keys" type="button" value="/" onclick="solutionTxt.value += '/'">
+        </div>
+        <div class="col-3">
+          <input class="normal-keys" type="button" value="x" onclick="solutionTxt.value += '*'">
+        </div>
+        <!-- Fifth Row -->
+        <div class="col-6">
+          <input class="reset-key" type="button" value="reset" onclick="solutionTxt.value = ''">
+        </div>
+        <div class="col-6">
+          <input class="sum-key" type="button" value="=" onclick="solutionTxt.value = eval(solutionTxt.value)">
+        </div>
+        
+      </div>
+      
+    </div>
+  </form>
+
+    </div>
+      <!-- KEYS SECTION-->
+        
+        <!--   
+          <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script>
+  </script>
+</body>
+</html>
