@@ -101,7 +101,7 @@ h1{
     /* width: 100%; */
 }
 input[type=button]{
-    cursor: pointer;
+    /* cursor: pointer; */
     border-radius: 7px;
     border: none;
     width: 100%;
