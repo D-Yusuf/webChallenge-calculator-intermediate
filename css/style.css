@@ -8,8 +8,8 @@
     font-family: 'League Spartan', sans-serif !important;
     text-align: center;
     /* transition: all 0.5s; */
-    overscroll-behavior-x: none;
-    overscroll-behavior-y: none;
+    overscroll-behavior:calc(100px - 100px);
+
 }
 body{
     letter-spacing: -0.5px;
@@ -23,6 +23,7 @@ body{
 .main-container{
     width: fit-content;
     height: fit-content;
+    
 }
 
 .container{
@@ -31,6 +32,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    /* margin: auto; */
     
 }
 label{
