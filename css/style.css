@@ -11,13 +11,16 @@
     /* overscroll-behavior:calc(100px - 100px); */
 
 }
+html{
+    overflow:hidden;
+
+}
 body{
     letter-spacing: -0.5px;
     /* scale: 1.1; */
     color: var(--white-text);
     height: 100vh;
     
-    overflow: hidden;
     background-color: var(--t1-main-background-desurated-blue);
 }
 .main-container{
