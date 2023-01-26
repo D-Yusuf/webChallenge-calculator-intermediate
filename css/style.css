@@ -9,6 +9,7 @@
     text-align: center;
     /* transition: all 0.5s; */
     overscroll-behavior-x: none;
+    overscroll-behavior-y: none;
 }
 body{
     letter-spacing: -0.5px;
