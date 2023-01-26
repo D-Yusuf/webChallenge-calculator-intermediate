@@ -8,6 +8,7 @@
     font-family: 'League Spartan', sans-serif !important;
     text-align: center;
     /* transition: all 0.5s; */
+    overscroll-behavior-x: none;
 }
 body{
     letter-spacing: -0.5px;
