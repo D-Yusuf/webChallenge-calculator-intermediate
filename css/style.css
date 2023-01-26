@@ -7,16 +7,16 @@
     font-weight: var(--default-font-weight) !important;
     font-family: 'League Spartan', sans-serif !important;
     text-align: center;
-    
+    /* transition: all 0.5s; */
 }
 body{
     letter-spacing: -0.5px;
-    scale: 1.1;
+    /* scale: 1.1; */
     color: var(--white-text);
     height: 100vh;
     
     overflow: hidden;
-    background-color: var(--t1-main-background-desurated-blue) !important;
+    background-color: var(--t1-main-background-desurated-blue);
 }
 div{
     width: fit-content;
@@ -74,7 +74,7 @@ p{font-size: 11px;}
     margin-right: 0.5rem;
 }
 .solution input{
-    width: 50%;
+    max-width: 360px;
     /* height: 90px; */
     border-radius: 10px;
     border: none;
@@ -97,6 +97,7 @@ h1{
     border-radius: 10px;
     text-align: center;
     width: 425px;
+    /* padding: 0.6rem; */
     /* width: 100%; */
 }
 input[type=button]{
@@ -118,25 +119,14 @@ input.normal-keys{
 input.normal-keys:active{
     background-color: hsl(30, 25%, 100%);
 }
-input.del-key{
+input.del-key, input.reset-key{
     background-color: var(--t1-key-background-dark-blue);
     box-shadow: 0px 3px var(--t1-key-shadow-dark-blue);
     color: var(--white-text);
     text-transform:uppercase;
     font-size: 20px;
 }
-input.del-key:active{
-    background-color: hsl(225, 21%, 60%);
-}
-
-input.reset-key{
-    background-color: var(--t1-key-background-dark-blue);
-    box-shadow: 0px 3px var(--t1-key-shadow-dark-blue);
-    color: var(--white-text);
-    text-transform:uppercase;
-    font-size: 20px;
-}
-input.reset-key:active{
+input.del-key:active, input.reset-key:active{
     background-color: hsl(225, 21%, 60%);
 }
 
@@ -145,6 +135,9 @@ input.sum-key{
     box-shadow: 0px 3px var(--t1-key-shadow-red);
     color: var(--white-text);
     font-size: 24px;
+}
+input.sum-key:active{
+    background-color:hsl(6, 63%, 60%) ;
 }
 
 
@@ -177,9 +170,9 @@ input.sum-key{
     
 /* -THEME 2- */
     /* Backgrounds */
-    --t2-main-background:hsl(0, 0%, 90%);
-    --t2-keypad-background:hsl(0, 5%, 81%);
-    --t2-screen-background:hsl(0, 0%, 93%);
+    --t2-main-background-white:hsl(0, 0%, 90%);
+    --t2-keypad-background-white:hsl(0, 5%, 81%);
+    --t2-screen-background-white:hsl(0, 0%, 93%);
 
     /* Keys */
     --t2-key-background-cyan:hsl(185, 42%, 37%);
