@@ -20,10 +20,11 @@ body{
     overflow: hidden;
     background-color: var(--t1-main-background-desurated-blue);
 }
-div{
+.main-container{
     width: fit-content;
     height: fit-content;
 }
+
 .container{
     /* max-width: var(--desktop-width) !important; */
     /* background-color: black; */
